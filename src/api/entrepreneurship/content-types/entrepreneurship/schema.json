@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrepreneurships",
+  "info": {
+    "singularName": "entrepreneurship",
+    "pluralName": "entrepreneurships",
+    "displayName": "Entrepreneurship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entrepreneurship": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "json"
+    },
+    "address": {
+      "type": "string"
+    },
+    "officeHours": {
+      "type": "json"
+    },
+    "officeDays": {
+      "type": "json"
+    },
+    "contactChannels": {
+      "type": "json"
+    },
+    "avatar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::avatar.avatar"
+    },
+    "imageFirst": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::image.image"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "score": {
+      "type": "float",
+      "default": 5,
+      "max": 5,
+      "min": 1
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "frontImage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image"
+    },
+    "frontImageGallery": {
+      "type": "string",
+      "default": "https://media.istockphoto.com/vectors/gray-abstract-background-vector-id990697446?k=20&m=990697446&s=612x612&w=0&h=WTppK6aV-hj0zM-xZV3_rvN7ULnFDvVuzAHieCCUt3o="
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fronts",
+  "info": {
+    "singularName": "front",
+    "pluralName": "fronts",
+    "displayName": "Fronts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identifier": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "uriImage": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

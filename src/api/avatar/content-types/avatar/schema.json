@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avatars",
+  "info": {
+    "singularName": "avatar",
+    "pluralName": "avatars",
+    "displayName": "avatars",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identifier": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "uriAvatar": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}
